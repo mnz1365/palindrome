@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>kayak</p>
+    <br><br>
+    <p id="p1"></p>
+    
+
+    <script>
+        var word = "kayak";
+        var reverse_word = "";
+        var second_word = "";
+        var word_result = false;
+         console.log(typeof(reverse_word));
+        second_word = word.split("");
+
+        for(var i=0;i<second_word.length;i++){
+            reverse_word += second_word[(second_word.length-1)-i];
+        }
+        
+       
+        if(reverse_word == word){
+            word_result = true;
+            
+            document.getElementById("p1").innerHTML = "the word is palindrome";
+        
+        }
+       
+       
+       if(word_result == false){
+             document.getElementById("p1").innerHTML = "the word is not palindrome!";
+        }
+    </script>
+</body>
+</html>
